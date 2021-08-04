@@ -1,0 +1,25 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+     crossorigin=""></script>
+</head>
+<body>
+<div id="map" style="width: 100%; height: 100%;"></div>
+<script>
+var map = L.map('map').setView([39.192801330854564, -75.53816600547233], 18);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+     attribution:
+         '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a>' +
+         '',
+     maxZoom: 18
+ }).addTo(map);
+var marker = L.marker([39.192801330854564, -75.53816600547233]).addTo(map);
+var popup = marker.bindPopup('<b>Sears</b><br />1000 Dover Mall</br>Dover, DE 19901');
+popup.openPopup();
+</script>
+</body>
