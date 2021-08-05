@@ -11,14 +11,14 @@
 <body>
 <div id="map" style="width: 100%; height: 100%;"></div>
 <script>
-var map = L.map('map').setView([39.512451810925654, -75.71062085409216], 18);
+var map = L.map('map').setView([39.452736158200274, -75.68182956014648], 18);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
      attribution:
          '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a>' +
          '',
      maxZoom: 18
  }).addTo(map);
-var marker = L.marker([39.512451810925654, -75.71062085409216]).addTo(map);
+var marker = L.marker([39.452736158200274, -75.68182956014648]).addTo(map);
 var popup = marker.bindPopup('<b>CVS</b><br />674 Middletown Odessa Rd</br>Middletown, DE 19709');
 popup.openPopup();
 </script>
