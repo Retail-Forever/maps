@@ -10,14 +10,14 @@
 <body>
 <div id="map" style="width: 100%; height: 100%;"></div>
 <script>
-var map = L.map('map').setView([39.167132924457746, -75.51724679815335], 18);
+var map = L.map('map').setView([39.16681267531343, -75.51773496015674], 18);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
      attribution:
          '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a>' +
          '',
      maxZoom: 18
  }).addTo(map);
-var marker = L.marker([39.167132924457746, -75.51724679815335]).addTo(map);
+var marker = L.marker([39.16681267531343, -75.51773496015674]).addTo(map);
 var popup = marker.bindPopup('<b>Lidl</b><br />150 N Dupont Hwy</br>Dover, DE 19901');
 popup.openPopup();
 </script>
